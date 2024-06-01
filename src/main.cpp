@@ -22,9 +22,9 @@ int main(int argc, char **argv) {
 	std::cout << "\tTime step = " << time_step << std::endl;
 	std::cout << "\tSimulation time = " << sim_time << std::endl;
 
-	Simulation sim(count_planet, time_step, sim_time);
+	CubePlanetConfig planet_config;
+	Simulation sim(count_planet, time_step, sim_time, &planet_config, true);
 
 	sim.run();
-
 	return (0);
 }

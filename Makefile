@@ -12,6 +12,7 @@ TYPE		= cpp
 SRC_DIR		= src
 SRC			= main					\
 			  simulation			\
+			  planet
 
 SRC_TYPE	= $(addsuffix .$(TYPE),$(SRC))
 
